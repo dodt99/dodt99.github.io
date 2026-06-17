@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:13px;color:#1a1a1a;background:#fff;line-height:1.55}
+  .page{max-width:820px;margin:0 auto;padding:36px 44px}
+  .name{font-family:Georgia,'Times New Roman',serif;font-size:34px;font-weight:500;letter-spacing:-0.3px;color:#0f1f3d;margin-bottom:6px}
+  .contact{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:12px;color:#555;margin-bottom:24px}
+  .contact span{display:flex;align-items:center;gap:6px}
+  .contact svg{flex-shrink:0}
+  .section{margin-bottom:20px}
+  .sec-title{font-size:10.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#0f1f3d;border-bottom:1.5px solid #0f1f3d;padding-bottom:4px;margin-bottom:12px}
+  .summary{font-size:13px;line-height:1.7;color:#333}
+  .skills-grid{display:grid;grid-template-columns:110px 1fr;gap:5px 12px;font-size:12.5px}
+  .sk-label{font-weight:600;color:#0f1f3d;padding-top:1px}
+  .sk-val{color:#333}
+  .job{margin-bottom:14px}
+  .job-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px}
+  .job-title{font-weight:600;font-size:13.5px;color:#0f1f3d}
+  .job-company{font-size:12.5px;color:#555;margin-top:1px}
+  .job-date{font-size:11.5px;color:#777;white-space:nowrap}
+  .job ul{margin-top:7px;padding-left:14px;display:flex;flex-direction:column;gap:4px}
+  .job li{font-size:12.5px;color:#333;line-height:1.55}
+  .job li strong{color:#0f1f3d;font-weight:600}
+  .proj{margin-bottom:13px}
+  .proj-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px}
+  .proj-name{font-weight:600;font-size:13px;color:#0f1f3d}
+  .proj-sub{font-size:12px;color:#666;margin-top:1px}
+  .proj-date{font-size:11.5px;color:#777}
+  .proj ul{margin-top:6px;padding-left:14px;display:flex;flex-direction:column;gap:3px}
+  .proj li{font-size:12px;color:#333;line-height:1.55}
+  .tech{font-size:11.5px;color:#888;margin-top:5px;line-height:1.5}
+  .edu-row{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap}
+  .edu-deg{font-weight:600;font-size:13px;color:#0f1f3d}
+  .edu-school{font-size:12.5px;color:#555;margin-top:2px}
+  .cert{font-size:12.5px;color:#333}
+  .cert strong{color:#0f1f3d}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="name">Dinh Tien Do</div>
+  <div class="contact">
+    <span>
+      <!-- Map Pin Icon -->
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f1f3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      Hanoi, Vietnam
+    </span>
+    <span>
+      <!-- Mail Icon -->
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f1f3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="16" x="2" y="4" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+      do.dinhtien227@gmail.com
+    </span>
+    <span>
+      <!-- Phone Icon -->
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f1f3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      0987566386
+    </span>
+    <span>
+      <!-- LinkedIn Icon (outlined square style) -->
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f1f3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="4"/>
+        <line x1="7" y1="10" x2="7" y2="17"/>
+        <line x1="7" y1="7" x2="7.01" y2="7"/>
+        <path d="M11 10v7M11 13a3 3 0 0 1 6 0v4"/>
+      </svg>
+      /in/dinh-tien-do
+    </span>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Summary</div>
+    <p class="summary">Front-end Developer with 5 years of experience building scalable and high-performance web applications across multiple domains. Specialized in React/Next.js and modern frontend architecture, with strong focus on performance optimization and data-intensive systems. Experienced in developing real-time features, improving user experience, and delivering production-ready solutions in fast-paced environments.</p>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Technical Skills</div>
+    <div class="skills-grid">
+      <span class="sk-label">Core</span><span class="sk-val">React.js, Next.js, TypeScript, JavaScript</span>
+      <span class="sk-label">State</span><span class="sk-val">TanStack Query, Redux Toolkit, Zustand, Pinia</span>
+      <span class="sk-label">UI &amp; Styling</span><span class="sk-val">Tailwind CSS, Radix UI, Shadcn/UI, Material UI, PrimeVue</span>
+      <span class="sk-label">Real-time</span><span class="sk-val">WebSocket, Socket.io, TradingView Charting Library</span>
+      <span class="sk-label">Performance</span><span class="sk-val">SSR/SSG, Code Splitting, Lazy Loading, Core Web Vitals</span>
+      <span class="sk-label">Tools &amp; CI</span><span class="sk-val">Git, GitHub Actions, GitLab CI, Docker, Nginx, Vercel</span>
+      <span class="sk-label">Other</span><span class="sk-val">Angular, Vue.js, Node.js, Web3, AWS (EC2, S3)</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Front-end Developer</span>
+        <span class="job-date">Apr 2025 – May 2026</span>
+      </div>
+      <div class="job-company">ONUS Labs</div>
+      <ul>
+        <li>Contributed to a <strong>high-traffic crypto trading platform</strong> serving 7M+ users, focusing on performance and scalability.</li>
+        <li>Developed trading interfaces handling real-time market data (price feeds, order books) via <strong>Socket.io</strong>.</li>
+        <li>Refactored data fetching using React Query, reducing redundant API calls by <strong>20–30%</strong> through caching and deduplication.</li>
+        <li>Improved application performance by applying <strong>SSR/SSG, code splitting</strong>, and lazy loading.</li>
+        <li>Collaborated with SEO team to implement metadata, sitemaps, and structured data.</li>
+        <li>Contributed to frontend architecture decisions to improve <strong>scalability and maintainability</strong>.</li>
+        <li>Took ownership of key features from development to production deployment.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Front-end Developer</span>
+        <span class="job-date">Aug 2023 – Mar 2025</span>
+      </div>
+      <div class="job-company">FPT Software</div>
+      <ul>
+        <li>Developed <strong>real-time dashboards</strong> for an energy platform (Korean client) with live charting and table components using ApexCharts and Material UI.</li>
+        <li>Integrated backend APIs and maintained stable UI under <strong>continuous real-time data updates</strong>.</li>
+        <li>Built and maintained frontend modules across projects using <strong>Angular and Vue.js</strong>.</li>
+        <li>Led code reviews for key modules and <strong>mentored junior team members</strong>, ensuring code quality through PR reviews.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Front-end Developer</span>
+        <span class="job-date">Feb 2022 – Aug 2023</span>
+      </div>
+      <div class="job-company">VNEXT Software</div>
+      <ul>
+        <li>Developed <strong>financial and analytics platforms</strong> for Vietnamese clients (FiinGroup) with reusable UI components and improved rendering performance.</li>
+        <li>Built reusable UI components and improved performance for <strong>data-intensive dashboards</strong>.</li>
+        <li>Worked with both <strong>React and Vue.js</strong> depending on project requirements.</li>
+      </ul>
+    </div>
+
+    <!-- <div class="job" style="page-break-before: always; padding-top: 36px;"> -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Fullstack Developer</span>
+        <span class="job-date">Jan 2021 – Feb 2022</span>
+      </div>
+      <div class="job-company">AMELA Technology</div>
+      <ul>
+        <li>Developed full-stack features using <strong>React, Node.js, and MySQL</strong> for web applications.</li>
+        <li>Designed REST APIs and deployed applications on <strong>AWS (EC2, S3)</strong> with CI/CD pipelines.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Key Projects</div>
+    <div class="two-col">
+      <div>
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">Goonus</span>
+            <span class="proj-date">Apr 2025 – May 2026</span>
+          </div>
+          <div class="proj-sub">ONUS Labs</div>
+          <ul>
+            <li>High-traffic crypto exchange platform serving 7M+ users with real-time market data and trading features.</li>
+            <li>Built and optimized trading interfaces handling high-frequency updates via WebSocket, improving data consistency and UI responsiveness.</li>
+          </ul>
+          <div class="tech">Next.js · Tailwind CSS · Socket.io · TanStack Query · Zustand</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">Power Brokerage Platform</span>
+            <span class="proj-date">Jun 2024 – Mar 2025</span>
+          </div>
+          <div class="proj-sub">FPT Software</div>
+          <ul>
+            <li>Energy trading and monitoring platform providing real-time insights for power systems.</li>
+            <li>Developed scalable dashboards and data visualization components, ensuring stable UI under continuous real-time data streams.</li>
+          </ul>
+          <div class="tech">React.js · Redux · Material UI · ApexCharts</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">Label Management</span>
+            <span class="proj-date">Feb 2024 – May 2024</span>
+          </div>
+          <div class="proj-sub">FPT Software</div>
+          <ul>
+            <li>Developed frontend features using Vue.js, integrating APIs to ensure seamless data flow and application stability.</li>
+            <li>Built reusable UI components with PrimeVue and managed state using Pinia to improve maintainability.</li>
+          </ul>
+          <div class="tech">Vue.js · Pinia · PrimeVue</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">Newton – Nagase</span>
+            <span class="proj-date">Aug 2023 – Jan 2024</span>
+          </div>
+          <div class="proj-sub">FPT Software</div>
+          <ul>
+            <li>Analyzed legacy WinForm code and translated complex business logic into an Angular-based frontend.</li>
+            <li>Developed frontend features using Angular and NgRx to ensure accurate data flow and system consistency.</li>
+          </ul>
+          <div class="tech">Angular · NgRx</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">FiinGate</span>
+            <span class="proj-date">Jan 2023 – Jul 2023</span>
+          </div>
+          <div class="proj-sub">VNEXT Software</div>
+          <ul>
+            <li>Business intelligence platform for financial data analytics and reporting.</li>
+            <li>Built reusable UI components and optimized rendering performance for large-scale datasets and complex charts.</li>
+          </ul>
+          <div class="tech">React.js · Redux Toolkit · Sass · Recharts</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">Tag Album</span>
+            <span class="proj-date">Sep 2022 – Dec 2022</span>
+          </div>
+          <div class="proj-sub">VNEXT Software</div>
+          <ul>
+            <li>Collaborated with business and backend teams to create user-friendly front-end interfaces.</li>
+            <li>Built and deployed the application with a focus on usability and component reuse.</li>
+          </ul>
+          <div class="tech">Vue.js · Vuex · Vue Router · Bootstrap</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">FiinPro-X</span>
+            <span class="proj-date">Mar 2022 – Sep 2022</span>
+          </div>
+          <div class="proj-sub">VNEXT Software</div>
+          <ul>
+            <li>Worked closely with business and backend teams to build and maintain front-end interfaces.</li>
+            <li>Debugged and resolved performance issues; maintained and improved application quality.</li>
+          </ul>
+          <div class="tech">React.js · Redux Toolkit · TradingView · Fullcalendar</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-header">
+            <span class="proj-name">E-Daotao &amp; AMS</span>
+            <span class="proj-date">Jan 2021 – Feb 2022</span>
+          </div>
+          <div class="proj-sub">AMELA Technology</div>
+          <ul>
+            <li>Designed and implemented REST APIs; built front-end and back-end features for both projects.</li>
+          </ul>
+          <div class="tech">React.js · Express.js · MySQL · AWS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Education</div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-deg">Bachelor of Engineering – Electronics &amp; Telecommunications</div>
+        <div class="edu-school">Hanoi University of Science and Technology</div>
+      </div>
+      <span style="font-size:12px;color:#777">2017 – 2022</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Certifications</div>
+    <p class="cert"><strong>Senior React Certified Developer</strong> — certificates.dev · 2024</p>
+  </div>
+</div>
+</body>
+</html>
